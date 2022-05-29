@@ -1,0 +1,247 @@
+.slider {
+  background-color: #000;
+  color: #fff;
+}
+
+.slider__prev-arrow,
+.slider__prev-next-arrow {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0.3125rem solid #fff;
+  border-right: unset;
+  border-bottom: unset;
+  opacity: 0.9;
+}
+
+.slider__prev-arrow {
+  z-index: 1;
+  left: 1rem;
+  transform: rotate(-45deg);
+}
+
+.slider__prev-next-arrow {
+  right: 1rem;
+  transform: rotate(135deg);
+}
+
+.slider__prev-arrow::before,
+.slider__prev-next-arrow::before {
+  content: "";
+}
+
+.slick-arrow {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .slick-arrow {
+    display: block;
+  }
+}
+
+.slide {
+  position: relative;
+  height: 90vh;
+}
+
+.slide__backgroud-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/*mobile*/
+
+.slide__copy {
+  position: absolute;
+  top: 31.25rem;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.slide__copy span {
+  display: block;
+  margin-bottom: 1.25rem;
+}
+
+/*disktop*/
+
+@media screen and (min-width: 1280px) {
+  .slide__copy {
+    padding-left: 52vw;
+    top: 6.25rem;
+    display: block;
+    text-align: unset;
+  }
+
+  .slide__copy span {
+    display: inline;
+  }
+}
+
+.slide__copy h6 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1875rem;
+}
+
+.slide__copy h2 {
+  margin: 1rem 0;
+  font-size: 6.25rem;
+  text-transform: uppercase;
+  line-height: 6.25rem;
+}
+
+@media screen and (min-width: 1280px) {
+  .slide__copy h2 {
+    font-size: 6.25rem;
+    line-height: 5.25rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.slide__copy h2 span {
+  display: block;
+}
+
+#conter {
+  background-color: var(--color-primary);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.counter__conteiner {
+  display: grid;
+  place-items: center;
+  padding: 4.375rem 0;
+}
+
+@media screen and (min-width: 1280px) {
+  .counter__conteiner {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+.counter__conteiner h3 {
+  font-size: 2.1875rem;
+  font-weight: 900;
+}
+
+.counter__conteiner h3 small {
+  display: block;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/*mibile*/
+
+.institutional {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 3.125rem;
+  align-items: center;
+  padding: 4.375rem;
+}
+
+/*disktop*/
+
+@media screen and (min-width: 1280px) {
+  .institutional {
+    grid-template-columns: auto auto;
+    padding: 4.375rem;
+  }
+}
+
+.institutional__image {
+  max-width: 100vws;
+}
+
+/*mobile*/
+
+@media screen and (min-width: 1280px) {
+  .institutional__image {
+    max-width: 550px;
+  }
+}
+
+.institutional__copy {
+  padding: 0 1rem 1.8125rem 1rem; /*mobile*/
+}
+
+/*descktop*/
+
+@media screen and (min-width: 1280px) {
+  .institutional__copy {
+    padding: 0 1.8125rem;
+  }
+}
+
+.institutional__copy h6 {
+  font-size: 0.875rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.institutional__copy h4 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.institutional__copy p {
+  font-family: "Roboto" sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6875rem;
+  margin-bottom: 0;
+  margin-bottom: 2.5rem;
+}
+
+.quote {
+  background-image: url(../images/cinza.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.quote__container {
+  display: grid;
+  align-items: center;
+  justify-items: end;
+  min-height: 80vh;
+}
+
+.quote__copy {
+  background-color: #fff;
+  padding: 2rem 4.365rem;
+}
+
+.quote__copy h6 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  letter-spacing: 0.1875rem;
+  line-height: 1.4375rem;
+  color: #000;
+  width: 53ch;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.quote__copy h2 {
+  font-size: 5rem;
+  line-height: 5rem;
+  text-transform: uppercase;
+  letter-spacing: -0.1875rem;
+  margin: 1.875rem 0;
+}
+
+.quote__copy h2 span {
+  display: block;
+}
