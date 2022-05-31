@@ -46,7 +46,7 @@ ul {
   margin: 0 auto;
 }
 
-.logo--studion {
+.logo--obp {
   font-size: 2.375rem;
   font-weight: 900;
   text-transform: uppercase;
@@ -54,12 +54,12 @@ ul {
   text-align: right;
 }
 
-.logo--studion__subtitle {
+.logo--obp__subtitle {
   font-size: 0.875rem;
   font-weight: 300;
 }
 
-.logo--studion a {
+.logo--obp a {
   color: #fff;
   text-decoration: none;
 }
